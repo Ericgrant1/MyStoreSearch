@@ -27,11 +27,13 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         searchResults = []
-        for i in 0...2 {
-            let searchResult = SearchResult()
-            searchResult.name = String(format: "Fake Result %d for", i)
-            searchResult.artistName = searchBar.text!
-            searchResults.append(searchResult)
+        if searchBar.text! != "doctor strange" {
+            for i in 0...2 {
+                let searchResult = SearchResult()
+                searchResult.name = String(format: "Fake Result %d for", i)
+                searchResult.artistName = searchBar.text!
+                searchResults.append(searchResult)
+            }
         }
         tableView.reloadData()
     }
@@ -47,7 +49,11 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        return searchResults.count
+        if searchResults.count == 0 {
+            return 1
+        } else {
+            return searchResults.count
+        }
     }
     
     func tableView(
@@ -60,10 +66,15 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             cell = UITableViewCell(style: .subtitle,
                                    reuseIdentifier: cellIdentifier)
         }
-        let searchResult = searchResults[indexPath.row]
         var content = cell!.defaultContentConfiguration()
-        content.text = searchResult.name
-        content.secondaryText = searchResult.artistName
+        if searchResults.count == 0 {
+            content.text = "(Nothing Found)"
+            content.secondaryText = ""
+        } else {
+            let searchResult = searchResults[indexPath.row]
+            content.text = searchResult.name
+            content.secondaryText = searchResult.artistName
+        }
         cell!.contentConfiguration = content
         return cell!
     }
