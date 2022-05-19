@@ -25,6 +25,7 @@ class SearchViewController: UIViewController {
 // MARK: - Search Bar Delegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         searchResults = []
         for i in 0...2 {
             searchResults.append(
