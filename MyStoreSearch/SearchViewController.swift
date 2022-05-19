@@ -13,6 +13,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var searchResults = [SearchResult]()
+    var hasSearched = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ extension SearchViewController: UISearchBarDelegate {
                 searchResults.append(searchResult)
             }
         }
+        hasSearched = true
         tableView.reloadData()
     }
     
@@ -49,7 +51,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        if searchResults.count == 0 {
+        if !hasSearched {
+            return 0
+        } else if searchResults.count == 0 {
             return 1
         } else {
             return searchResults.count
