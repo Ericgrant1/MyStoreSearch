@@ -18,6 +18,8 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.contentInset = UIEdgeInsets(top: 51, left: 0, bottom: 0, right: 0)
+        let cellNib = UINib(nibName: "SearchResultCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "SearchResultCell")
     }
 
 
@@ -65,12 +67,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         let cellIdentifier = "SearchResultCell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
-        if cell == nil {
-            cell = UITableViewCell(style: .subtitle,
-                                   reuseIdentifier: cellIdentifier)
-        }
-        var content = cell!.defaultContentConfiguration()
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: cellIdentifier, for: indexPath)
+        var content = cell.defaultContentConfiguration()
         if searchResults.count == 0 {
             content.text = "(Nothing Found)"
             content.secondaryText = ""
@@ -79,8 +78,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             content.text = searchResult.name
             content.secondaryText = searchResult.artistName
         }
-        cell!.contentConfiguration = content
-        return cell!
+        cell.contentConfiguration = content
+        return cell
     }
     
     // MARK: - Table View Delegate
