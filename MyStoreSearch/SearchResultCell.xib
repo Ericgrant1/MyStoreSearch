@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="Dic-gN-9zY">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="Dic-gN-9zY" customClass="SearchResultCell" customModule="MyStoreSearch" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dic-gN-9zY" id="pzZ-3r-znn">
@@ -51,6 +51,11 @@
                     <constraint firstItem="Xv0-de-8Pq" firstAttribute="leading" secondItem="P61-ZN-7x4" secondAttribute="trailing" constant="8" id="zoJ-dr-aWQ"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="artistNameLabel" destination="Xv0-de-8Pq" id="T5l-BU-fWc"/>
+                <outlet property="artworkImageView" destination="P61-ZN-7x4" id="RyV-WK-LsK"/>
+                <outlet property="nameLabel" destination="Rff-LD-vnz" id="Alb-8C-NFu"/>
+            </connections>
             <point key="canvasLocation" x="198" y="101"/>
         </tableViewCell>
     </objects>

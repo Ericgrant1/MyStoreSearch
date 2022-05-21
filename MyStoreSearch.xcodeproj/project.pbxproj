@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		524C17FA2837EA7100E2E25E /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524C17F92837EA7100E2E25E /* SearchResultCell.xib */; };
+		524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C17FB2839370400E2E25E /* SearchResultCell.swift */; };
 		5252CC5628353F1000FC8C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252CC5528353F1000FC8C4A /* AppDelegate.swift */; };
 		5252CC5828353F1000FC8C4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252CC5728353F1000FC8C4A /* SceneDelegate.swift */; };
 		5252CC5A28353F1000FC8C4A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252CC5928353F1000FC8C4A /* SearchViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		524C17F92837EA7100E2E25E /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		524C17FB2839370400E2E25E /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		5252CC5228353F1000FC8C4A /* MyStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252CC5528353F1000FC8C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5252CC5728353F1000FC8C4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				5252CC5528353F1000FC8C4A /* AppDelegate.swift */,
 				5252CC5728353F1000FC8C4A /* SceneDelegate.swift */,
 				5252CC5928353F1000FC8C4A /* SearchViewController.swift */,
+				524C17FB2839370400E2E25E /* SearchResultCell.swift */,
 				524C17F92837EA7100E2E25E /* SearchResultCell.xib */,
 				5252CC692836A5F100FC8C4A /* SearchResult.swift */,
 				5252CC5B28353F1000FC8C4A /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				5252CC5628353F1000FC8C4A /* AppDelegate.swift in Sources */,
 				5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */,
 				5252CC5828353F1000FC8C4A /* SceneDelegate.swift in Sources */,
+				524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
