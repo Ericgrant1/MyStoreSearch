@@ -84,14 +84,19 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if !searchBar.text!.isEmpty {
             searchBar.resignFirstResponder()
+            
             hasSearched = true
             searchResults = []
+            
             let url = iTunesURL(searchText: searchBar.text!)
             print("URL: '\(url)'")
+            
             if let data = performStoreRequest(with: url) {
                 searchResults = parse(data: data)
+                searchResults.sort { result1, result2 in
+                    return result1.name.localizedStandardCompare(result2.name) == .orderedAscending
+                }
               }
-
             tableView.reloadData()
         }
     }
