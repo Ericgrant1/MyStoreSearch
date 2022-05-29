@@ -17,6 +17,7 @@
 		5252CC5F28353F1200FC8C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC5E28353F1200FC8C4A /* Assets.xcassets */; };
 		5252CC6228353F1200FC8C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC6028353F1200FC8C4A /* LaunchScreen.storyboard */; };
 		5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252CC692836A5F100FC8C4A /* SearchResult.swift */; };
+		52D162832843B79F00D70046 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D162822843B79F00D70046 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5252CC6128353F1200FC8C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5252CC6328353F1200FC8C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5252CC692836A5F100FC8C4A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		52D162822843B79F00D70046 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				524C17FB2839370400E2E25E /* SearchResultCell.swift */,
 				524C17FD28394D2800E2E25E /* NothingFoundCell.xib */,
 				524C17F92837EA7100E2E25E /* SearchResultCell.xib */,
+				52D162822843B79F00D70046 /* LoadingCell.xib */,
 				5252CC692836A5F100FC8C4A /* SearchResult.swift */,
 				5252CC5B28353F1000FC8C4A /* Main.storyboard */,
 				5252CC5E28353F1200FC8C4A /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				5252CC6228353F1200FC8C4A /* LaunchScreen.storyboard in Resources */,
 				5252CC5F28353F1200FC8C4A /* Assets.xcassets in Resources */,
+				52D162832843B79F00D70046 /* LoadingCell.xib in Resources */,
 				524C17FA2837EA7100E2E25E /* SearchResultCell.xib in Resources */,
 				524C17FE28394D2800E2E25E /* NothingFoundCell.xib in Resources */,
 				5252CC5D28353F1000FC8C4A /* Main.storyboard in Resources */,
