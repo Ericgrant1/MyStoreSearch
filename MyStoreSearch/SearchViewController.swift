@@ -101,14 +101,17 @@ extension SearchViewController: UISearchBarDelegate {
             
             let queue = DispatchQueue.global()
             let url = iTunesURL(searchText: searchBar.text!)
-            
             queue.async {
                 
                 if let data = self.performStoreRequest(with: url) {
                     self.searchResults = self.parse(data: data)
                     self.searchResults.sort(by: <)
-                    //3
-                    print("DONE!")
+                    
+                    DispatchQueue.main.async {
+                        self.isLoading = false
+                        self.tableView.reloadData()
+                    }
+                    
                     return
                 }
             }
