@@ -33,6 +33,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wwX-K8-WRt"/>
                                 </connections>
                             </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shk-A9-4GG">
+                                <rect key="frame" x="0.0" y="51" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="f8q-83-fU0">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="4o3-Hl-gbw">
+                                            <rect key="frame" x="16" y="5.5" width="343" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aez-Jv-NNh"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,12 +62,16 @@
                             <constraint firstItem="ye6-t1-mKD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NZZ-VU-Lhv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p1i-Rl-gpU" secondAttribute="bottom" id="RwY-3D-D7H"/>
                             <constraint firstItem="p1i-Rl-gpU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ST2-oh-Q8P"/>
+                            <constraint firstItem="Shk-A9-4GG" firstAttribute="top" secondItem="ye6-t1-mKD" secondAttribute="bottom" id="bLe-eh-KwX"/>
+                            <constraint firstItem="Shk-A9-4GG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fa9-Hz-YNW"/>
+                            <constraint firstItem="Shk-A9-4GG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lSx-2O-9h9"/>
                             <constraint firstItem="ye6-t1-mKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s4C-jc-XSg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1i-Rl-gpU" secondAttribute="trailing" id="sxl-oJ-7T4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="ye6-t1-mKD" id="N13-hS-Xcd"/>
+                        <outlet property="segmentedControl" destination="4o3-Hl-gbw" id="1Vn-8s-HFF"/>
                         <outlet property="tableView" destination="p1i-Rl-gpU" id="qEG-Oz-SgD"/>
                     </connections>
                 </viewController>
