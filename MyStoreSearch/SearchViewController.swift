@@ -45,7 +45,7 @@ class SearchViewController: UIViewController {
         let encodedText = searchText.addingPercentEncoding(
             withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let urlString = String(
-            format: "https://itunes.apple.com/searchLOL?term=%@&limit=200",
+            format: "https://itunes.apple.com/search?term=%@&limit=200",
             encodedText)
         let url = URL(string: urlString)
         return url!
@@ -96,7 +96,16 @@ extension SearchViewController: UISearchBarDelegate {
                 if let error = error {
                     print("Failure! \(error.localizedDescription)")
                 } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
-                    print("Success! \(data!)")
+
+                    if let data = data {
+                        self.searchResults = self.parse(data: data)
+                        self.searchResults.sort(by: <)
+                        DispatchQueue.main.async {
+                            self.isLoading = false
+                            self.tableView.reloadData()
+                        }
+                        return
+                    }
                 } else {
                     print("Failure! \(response!)")
                 }
