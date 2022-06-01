@@ -95,8 +95,8 @@ extension SearchViewController: UISearchBarDelegate {
             let session = URLSession.shared
             dataTask = session.dataTask(with: url) { data, response, error in
 
-                if let error = error {
-                    print("Failure! \(error.localizedDescription)")
+                if let error = error as NSError?, error.code == -999 {
+                    return // Search was cancelled
                 } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
 
                     if let data = data {
