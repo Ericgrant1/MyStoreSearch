@@ -16,6 +16,7 @@
 		5252CC5D28353F1000FC8C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC5B28353F1000FC8C4A /* Main.storyboard */; };
 		5252CC5F28353F1200FC8C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC5E28353F1200FC8C4A /* Assets.xcassets */; };
 		5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252CC692836A5F100FC8C4A /* SearchResult.swift */; };
+		5275439C284921E8009E8CFF /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */; };
 		52D162832843B79F00D70046 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D162822843B79F00D70046 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		5252CC5E28353F1200FC8C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5252CC6328353F1200FC8C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5252CC692836A5F100FC8C4A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		52D162822843B79F00D70046 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				524C17FB2839370400E2E25E /* SearchResultCell.swift */,
 				524C17F92837EA7100E2E25E /* SearchResultCell.xib */,
 				5252CC5928353F1000FC8C4A /* SearchViewController.swift */,
+				5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */,
 			);
 			path = MyStoreSearch;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				5252CC5A28353F1000FC8C4A /* SearchViewController.swift in Sources */,
 				5252CC5628353F1000FC8C4A /* AppDelegate.swift in Sources */,
+				5275439C284921E8009E8CFF /* UIImageView+DownloadImage.swift in Sources */,
 				5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */,
 				5252CC5828353F1000FC8C4A /* SceneDelegate.swift in Sources */,
 				524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */,
