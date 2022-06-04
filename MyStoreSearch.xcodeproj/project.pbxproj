@@ -70,6 +70,7 @@
 			children = (
 				5252CC5528353F1000FC8C4A /* AppDelegate.swift */,
 				5252CC5E28353F1200FC8C4A /* Assets.xcassets */,
+				526A82B6284BABE700C56BBD /* DetailViewController.swift */,
 				5252CC6328353F1200FC8C4A /* Info.plist */,
 				52D162822843B79F00D70046 /* LoadingCell.xib */,
 				5252CC5B28353F1000FC8C4A /* Main.storyboard */,
@@ -77,7 +78,6 @@
 				5252CC5728353F1000FC8C4A /* SceneDelegate.swift */,
 				5252CC692836A5F100FC8C4A /* SearchResult.swift */,
 				524C17FB2839370400E2E25E /* SearchResultCell.swift */,
-				526A82B6284BABE700C56BBD /* DetailViewController.swift */,
 				524C17F92837EA7100E2E25E /* SearchResultCell.xib */,
 				5252CC5928353F1000FC8C4A /* SearchViewController.swift */,
 				5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */,

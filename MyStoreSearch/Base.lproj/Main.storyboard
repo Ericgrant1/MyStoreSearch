@@ -73,6 +73,7 @@
                         <outlet property="searchBar" destination="ye6-t1-mKD" id="N13-hS-Xcd"/>
                         <outlet property="segmentedControl" destination="4o3-Hl-gbw" id="1Vn-8s-HFF"/>
                         <outlet property="tableView" destination="p1i-Rl-gpU" id="qEG-Oz-SgD"/>
+                        <segue destination="eKl-S8-tQc" kind="presentation" identifier="ShowDetail" id="oYd-tH-KVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,16 +85,19 @@
             <objects>
                 <viewController id="eKl-S8-tQc" userLabel="Detail" customClass="DetailViewController" customModule="MyStoreSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jq4-Xv-MV3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E8-jk-gxw" userLabel="Pop-up View">
-                                <rect key="frame" x="47.5" y="193.5" width="280" height="280"/>
+                                <rect key="frame" x="47.5" y="183.5" width="280" height="280"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8s-g4-0bv" userLabel="Close Button">
                                         <rect key="frame" x="227" y="8" width="45" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="close" destination="eKl-S8-tQc" eventType="touchUpInside" id="0Ew-YQ-x4F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="DetailBG"/>
