@@ -199,6 +199,15 @@
                             <constraint firstItem="8E8-jk-gxw" firstAttribute="centerY" secondItem="Jq4-Xv-MV3" secondAttribute="centerY" id="BYx-pe-gyS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="wt0-Uh-xWB" id="g3M-bo-U9Y"/>
+                        <outlet property="artworkImageView" destination="Gzg-NV-ssv" id="dXf-15-DUe"/>
+                        <outlet property="genreLabel" destination="z6T-vb-2rV" id="3mD-Gv-4T2"/>
+                        <outlet property="kindLabel" destination="gs3-55-x0B" id="KTa-93-2Pr"/>
+                        <outlet property="nameLabel" destination="UQx-hE-pCL" id="3hF-hM-dDP"/>
+                        <outlet property="popupView" destination="8E8-jk-gxw" id="7UY-WU-TIj"/>
+                        <outlet property="priceButton" destination="MmI-Dg-Cl6" id="das-Zp-eBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phM-qp-TTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
