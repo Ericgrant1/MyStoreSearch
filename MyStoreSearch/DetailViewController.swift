@@ -9,6 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var searchResult: SearchResult!
+    var downloadTask: URLSessionDownloadTask?
     
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
@@ -32,6 +33,11 @@ class DetailViewController: UIViewController {
         if searchResult != nil {
             updateUI()
         }
+    }
+    
+    deinit {
+        print("deinit \(self)")
+        downloadTask?.cancel()
     }
     
     // MARK: - Actions
@@ -73,6 +79,11 @@ class DetailViewController: UIViewController {
         }
         
         priceButton.setTitle(priceText, for: .normal)
+        
+        // Get image
+        if let largeURL = URL(string: searchResult.imageLarge) {
+            downloadTask = artworkImageView.loadImage(url: largeURL)
+        }
     }
 }
 
