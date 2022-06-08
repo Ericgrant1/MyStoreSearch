@@ -54,7 +54,6 @@
 		5252CC4928353F1000FC8C4A = {
 			isa = PBXGroup;
 			children = (
-				52234AE928510103009F701D /* GradientView.swift */,
 				5252CC5428353F1000FC8C4A /* MyStoreSearch */,
 				5252CC5328353F1000FC8C4A /* Products */,
 			);
@@ -74,6 +73,7 @@
 				5252CC5528353F1000FC8C4A /* AppDelegate.swift */,
 				5252CC5E28353F1200FC8C4A /* Assets.xcassets */,
 				526A82B6284BABE700C56BBD /* DetailViewController.swift */,
+				52234AE928510103009F701D /* GradientView.swift */,
 				5252CC6328353F1200FC8C4A /* Info.plist */,
 				52D162822843B79F00D70046 /* LoadingCell.xib */,
 				5252CC5B28353F1000FC8C4A /* Main.storyboard */,
