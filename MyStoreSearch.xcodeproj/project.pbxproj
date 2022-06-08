@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52234AEA28510103009F701D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AE928510103009F701D /* GradientView.swift */; };
 		524C17FA2837EA7100E2E25E /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524C17F92837EA7100E2E25E /* SearchResultCell.xib */; };
 		524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C17FB2839370400E2E25E /* SearchResultCell.swift */; };
 		524C17FE28394D2800E2E25E /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524C17FD28394D2800E2E25E /* NothingFoundCell.xib */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52234AE928510103009F701D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		524C17F92837EA7100E2E25E /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		524C17FB2839370400E2E25E /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		524C17FD28394D2800E2E25E /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		5252CC4928353F1000FC8C4A = {
 			isa = PBXGroup;
 			children = (
+				52234AE928510103009F701D /* GradientView.swift */,
 				5252CC5428353F1000FC8C4A /* MyStoreSearch */,
 				5252CC5328353F1000FC8C4A /* Products */,
 			);
@@ -164,6 +167,7 @@
 				5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */,
 				5252CC5828353F1000FC8C4A /* SceneDelegate.swift in Sources */,
 				524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */,
+				52234AEA28510103009F701D /* GradientView.swift in Sources */,
 				526A82B7284BABE700C56BBD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
