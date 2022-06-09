@@ -18,6 +18,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var kindLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var priceButton: UIButton!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        transitioningDelegate = self
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,5 +105,16 @@ extension DetailViewController: UIGestureRecognizerDelegate {
         shouldReceive touch: UITouch
     ) -> Bool {
         return (touch.view === self.view)
+    }
+}
+
+// MARK: - View Controller Transitioning Delegate
+extension DetailViewController: UIViewControllerTransitioningDelegate {
+    func animationController(
+        forPresented presented: UIViewController,
+        presenting: UIViewController,
+        source: UIViewController
+    ) -> UIViewControllerAnimatedTransitioning? {
+        return BounceAnimationController()
     }
 }
