@@ -117,4 +117,10 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     ) -> UIViewControllerAnimatedTransitioning? {
         return BounceAnimationController()
     }
+    
+    func animationController(
+        forDismissed dismissed: UIViewController
+    ) -> UIViewControllerAnimatedTransitioning? {
+        return SlideOutAnimationController()
+    }
 }
