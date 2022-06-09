@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52234AEA28510103009F701D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AE928510103009F701D /* GradientView.swift */; };
+		52234AEC28510928009F701D /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AEB28510928009F701D /* BounceAnimationController.swift */; };
 		524C17FA2837EA7100E2E25E /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524C17F92837EA7100E2E25E /* SearchResultCell.xib */; };
 		524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C17FB2839370400E2E25E /* SearchResultCell.swift */; };
 		524C17FE28394D2800E2E25E /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524C17FD28394D2800E2E25E /* NothingFoundCell.xib */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		52234AE928510103009F701D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		52234AEB28510928009F701D /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		524C17F92837EA7100E2E25E /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		524C17FB2839370400E2E25E /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		524C17FD28394D2800E2E25E /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				5252CC5528353F1000FC8C4A /* AppDelegate.swift */,
 				5252CC5E28353F1200FC8C4A /* Assets.xcassets */,
+				52234AEB28510928009F701D /* BounceAnimationController.swift */,
 				526A82B6284BABE700C56BBD /* DetailViewController.swift */,
 				52234AE928510103009F701D /* GradientView.swift */,
 				5252CC6328353F1200FC8C4A /* Info.plist */,
@@ -165,6 +168,7 @@
 				5252CC5628353F1000FC8C4A /* AppDelegate.swift in Sources */,
 				5275439C284921E8009E8CFF /* UIImageView+DownloadImage.swift in Sources */,
 				5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */,
+				52234AEC28510928009F701D /* BounceAnimationController.swift in Sources */,
 				5252CC5828353F1000FC8C4A /* SceneDelegate.swift in Sources */,
 				524C17FC2839370400E2E25E /* SearchResultCell.swift in Sources */,
 				52234AEA28510103009F701D /* GradientView.swift in Sources */,
