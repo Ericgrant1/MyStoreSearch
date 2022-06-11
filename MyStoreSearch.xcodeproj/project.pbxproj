@@ -23,6 +23,7 @@
 		5275439C284921E8009E8CFF /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */; };
 		52D162832843B79F00D70046 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D162822843B79F00D70046 /* LoadingCell.xib */; };
 		52F560DE28539C320033AB2B /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F560DD28539C320033AB2B /* LandscapeViewController.swift */; };
+		52F560E02854F59D0033AB2B /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F560DF2854F59D0033AB2B /* FadeOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		52D162822843B79F00D70046 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		52F560DD28539C320033AB2B /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		52F560DF2854F59D0033AB2B /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				5252CC5E28353F1200FC8C4A /* Assets.xcassets */,
 				52234AEB28510928009F701D /* BounceAnimationController.swift */,
 				526A82B6284BABE700C56BBD /* DetailViewController.swift */,
+				52F560DF2854F59D0033AB2B /* FadeOutAnimationController.swift */,
 				52234AE928510103009F701D /* GradientView.swift */,
 				5252CC6328353F1200FC8C4A /* Info.plist */,
 				52F560DD28539C320033AB2B /* LandscapeViewController.swift */,
@@ -172,6 +175,7 @@
 			files = (
 				5252CC5A28353F1000FC8C4A /* SearchViewController.swift in Sources */,
 				5252CC5628353F1000FC8C4A /* AppDelegate.swift in Sources */,
+				52F560E02854F59D0033AB2B /* FadeOutAnimationController.swift in Sources */,
 				5275439C284921E8009E8CFF /* UIImageView+DownloadImage.swift in Sources */,
 				5252CC6A2836A5F100FC8C4A /* SearchResult.swift in Sources */,
 				52234AEC28510928009F701D /* BounceAnimationController.swift in Sources */,
