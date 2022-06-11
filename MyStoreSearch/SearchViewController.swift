@@ -121,9 +121,16 @@ class SearchViewController: UIViewController {
             withIdentifier: "LandscapeViewController") as? LandscapeViewController
         if let controller = landscapeVC {
             controller.view.frame = view.bounds
+            controller.view.alpha = 0
+            
             view.addSubview(controller.view)
             addChild(controller)
-            controller.didMove(toParent: self)
+            coordinator.animate(
+                alongsideTransition: { _ in
+                    controller.view.alpha = 1
+                }, completion: { _ in
+                    controller.didMove(toParent: self)
+                })
         }
     }
     
