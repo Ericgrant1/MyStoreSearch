@@ -127,6 +127,7 @@ class SearchViewController: UIViewController {
             coordinator.animate(
                 alongsideTransition: { _ in
                     controller.view.alpha = 1
+                    self.searchBar.resignFirstResponder()
                 }, completion: { _ in
                     controller.didMove(toParent: self)
                 })
