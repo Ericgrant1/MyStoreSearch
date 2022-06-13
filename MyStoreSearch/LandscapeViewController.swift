@@ -96,6 +96,13 @@ class LandscapeViewController: UIViewController {
             }
         }
         
-        // TODO: more to come here
+        // Set scroll view content size
+        let buttonsPerPage = columnsPerPage * rowsPerPage
+        let numPages = 1 + (searchResults.count - 1) / buttonsPerPage
+        scrollView.contentSize = CGSize(
+            width: CGFloat(numPages) * viewWidth,
+            height: scrollView.bounds.size.height)
+        
+        print("Number of pages: \(numPages)")
     }
 }
