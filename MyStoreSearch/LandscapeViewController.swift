@@ -70,6 +70,32 @@ class LandscapeViewController: UIViewController {
         let paddingHorz = (itemWidth - buttonWidth) / 2
         let paddingVert = (itemHeight - buttonHeight) / 2
         
+        // Add the buttons
+        var row = 0
+        var column = 0
+        var x = marginX
+        for (index, result) in searchResults.enumerated() {
+            let button = UIButton(type: .system)
+            button.backgroundColor = UIColor.white
+            button.setTitle("\(index)", for: .normal)
+
+            button.frame = CGRect(
+                x: x + paddingHorz,
+                y: marginY + CGFloat(row) * itemHeight + paddingVert,
+                width: buttonWidth,
+                height: buttonHeight)
+            
+            scrollView.addSubview(button)
+
+            row += 1
+            if row == rowsPerPage {
+                row = 0; x += itemWidth; column += 1
+                if column == columnsPerPage {
+                    column = 0; x += marginX * 2
+                }
+            }
+        }
+        
         // TODO: more to come here
     }
 }
