@@ -15,6 +15,7 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     private var firstTime = true
+    private var dowloads = [URLSessionDownloadTask]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,13 @@ class LandscapeViewController: UIViewController {
         if firstTime {
             firstTime = false
             tileButtons(searchResults)
+        }
+    }
+    
+    deinit {
+        print("deinit \(self)")
+        for task in dowloads {
+            task.cancel()
         }
     }
     
@@ -141,6 +149,7 @@ class LandscapeViewController: UIViewController {
                 }
             }
             task.resume()
+            dowloads.append(task)
         }
     }
 }
