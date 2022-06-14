@@ -47,6 +47,20 @@ class LandscapeViewController: UIViewController {
             tileButtons(searchResults)
         }
     }
+    
+    // MARK: - Actions
+    @IBAction func pageChange(_ sender: UIPageControl) {
+        UIView.animate(
+            withDuration: 0.3,
+            delay: 0,
+            options: [.curveEaseInOut],
+            animations: {
+                self.scrollView.contentOffset = CGPoint(
+                    x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage),
+                    y: 0)
+            },
+            completion: nil)
+    }
 
     // MARK: - Private Methods
     private func tileButtons(_ searchResults: [SearchResult]) {
@@ -107,5 +121,13 @@ class LandscapeViewController: UIViewController {
         print("Number of pages: \(numPages)")
         pageControl.numberOfPages = numPages
         pageControl.currentPage = 0
+    }
+}
+
+extension LandscapeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let with = scrollView.bounds.size.width
+        let page = Int((scrollView.contentOffset.x + with / 2) / with)
+        pageControl.currentPage = page
     }
 }

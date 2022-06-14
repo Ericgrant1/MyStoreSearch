@@ -235,10 +235,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="a2H-Yf-M1Y"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="mtj-e2-DMH"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uxn-i6-zUx" id="aWZ-dN-UYo"/>
+                                </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="F0b-V5-c3d">
                                 <rect key="frame" x="273" y="320" width="117" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pageChange:" destination="uxn-i6-zUx" eventType="valueChanged" id="QZq-Lv-FKH"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i83-uj-K59"/>
