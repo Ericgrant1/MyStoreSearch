@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias SearchComplete = (Bool) -> Void
+
 class Search {
     var searchResults: [SearchResult] = []
     var hasSearched = false
