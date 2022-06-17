@@ -10,6 +10,14 @@ import Foundation
 typealias SearchComplete = (Bool) -> Void
 
 class Search {
+    
+    enum Category: Int {
+        case all = 0
+        case music = 1
+        case software = 2
+        case ebooks = 3
+    }
+    
     var searchResults: [SearchResult] = []
     var hasSearched = false
     var isLoading = false
