@@ -47,8 +47,10 @@ class LandscapeViewController: UIViewController {
             firstTime = false
             
             switch search.state {
-                case .notSearchedYet, .loading, .noResults:
+                case .notSearchedYet, .noResults:
                     break
+                case .loading:
+                    showSpinner()
                 case .results(let list):
                     tileButtons(list)
             }
@@ -157,6 +159,16 @@ class LandscapeViewController: UIViewController {
             task.resume()
             dowloads.append(task)
         }
+    }
+    
+    private func showSpinner() {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.center = CGPoint(
+            x: scrollView.bounds.midX + 0.5,
+            y: scrollView.bounds.midY + 0.5)
+        spinner.tag = 1000
+        view.addSubview(spinner)
+        spinner.startAnimating()
     }
 }
 
