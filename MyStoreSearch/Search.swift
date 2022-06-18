@@ -26,9 +26,12 @@ class Search {
         }
     }
     
-    var searchResults: [SearchResult] = []
-    var hasSearched = false
-    var isLoading = false
+    enum State {
+        case notSearchedYet
+        case loading
+        case noResults
+        case results([SearchResult])
+    }
     
     private var dataTask: URLSessionDataTask?
     
