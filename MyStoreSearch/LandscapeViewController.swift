@@ -77,6 +77,18 @@ class LandscapeViewController: UIViewController {
             },
             completion: nil)
     }
+    
+    // MARK: - Helper Methods
+    func searchResultsReceived() {
+        hideSpinner()
+        
+        switch search.state {
+            case .notSearchedYet, .loading, .noResults:
+                break
+            case .results(let list):
+                tileButtons(list)
+        }
+    }
 
     // MARK: - Private Methods
     private func tileButtons(_ searchResults: [SearchResult]) {
@@ -169,6 +181,10 @@ class LandscapeViewController: UIViewController {
         spinner.tag = 1000
         view.addSubview(spinner)
         spinner.startAnimating()
+    }
+    
+    private func hideSpinner() {
+        view.viewWithTag(1000)?.removeFromSuperview()
     }
 }
 
