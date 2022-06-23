@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5218B4B528637E9C00B03BD2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5218B4B728637E9C00B03BD2 /* Localizable.strings */; };
 		52234AEA28510103009F701D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AE928510103009F701D /* GradientView.swift */; };
 		52234AEC28510928009F701D /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AEB28510928009F701D /* BounceAnimationController.swift */; };
 		52234AEE2852563A009F701D /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234AED2852563A009F701D /* SlideOutAnimationController.swift */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5218B4B628637E9C00B03BD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5218B4B8286388C400B03BD2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		52234AE928510103009F701D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		52234AEB28510928009F701D /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		52234AED2852563A009F701D /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 				5252CC5928353F1000FC8C4A /* SearchViewController.swift */,
 				52234AED2852563A009F701D /* SlideOutAnimationController.swift */,
 				5275439B284921E8009E8CFF /* UIImageView+DownloadImage.swift */,
+				5218B4B728637E9C00B03BD2 /* Localizable.strings */,
 			);
 			path = MyStoreSearch;
 			sourceTree = "<group>";
@@ -166,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252CC5F28353F1200FC8C4A /* Assets.xcassets in Resources */,
+				5218B4B528637E9C00B03BD2 /* Localizable.strings in Resources */,
 				52D012732862121800343F0E /* LoadingCell.xib in Resources */,
 				52D0127A286218A400343F0E /* SearchResultCell.xib in Resources */,
 				52D0126F286208D100343F0E /* NothingFoundCell.xib in Resources */,
@@ -199,6 +204,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5218B4B728637E9C00B03BD2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5218B4B628637E9C00B03BD2 /* en */,
+				5218B4B8286388C400B03BD2 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5252CC5B28353F1000FC8C4A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
