@@ -38,6 +38,7 @@ class SearchViewController: UIViewController {
         tableView.register(
             cellNib,
             forCellReuseIdentifier: TableView.CellIdentifiers.loadingCell)
+        title = NSLocalizedString("Search", comment: "split view primary button")
     }
     
     override func willTransition(
