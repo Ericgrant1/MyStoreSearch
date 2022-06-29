@@ -14,7 +14,13 @@ class DetailViewController: UIViewController {
         case fade
     }
     
-    var searchResult: SearchResult!
+    var searchResult: SearchResult! {
+        didSet {
+            if isViewLoaded {
+                updateUI()
+            }
+        }
+    }
     var downloadTask: URLSessionDownloadTask?
     var dismissStyle = AnimationStyle.fade
     var isPopUp = false
@@ -111,6 +117,8 @@ class DetailViewController: UIViewController {
         if let largeURL = URL(string: searchResult.imageLarge) {
             downloadTask = artworkImageView.loadImage(url: largeURL)
         }
+        
+        popupView.isHidden = false
     }
 }
 
