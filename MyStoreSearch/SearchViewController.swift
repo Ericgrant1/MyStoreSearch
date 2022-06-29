@@ -15,6 +15,7 @@ class SearchViewController: UIViewController {
     
     private let search = Search()
     var landscapeVC: LandscapeViewController?
+    weak var splitViewDetail: DetailViewController?
     
     struct TableView {
         struct CellIdentifiers {
