@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     var searchResult: SearchResult!
     var downloadTask: URLSessionDownloadTask?
     var dismissStyle = AnimationStyle.fade
+    var isPopUp = false
     
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
@@ -33,24 +34,31 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        popupView.layer.cornerRadius = 10
-        
-        let gesturerecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(close))
-        gesturerecognizer.cancelsTouchesInView = false
-        gesturerecognizer.delegate = self
-        view.addGestureRecognizer(gesturerecognizer)
+        if isPopUp {
+            popupView.layer.cornerRadius = 10
+            
+            let gesturerecognizer = UITapGestureRecognizer(
+                target: self,
+                action: #selector(close))
+            gesturerecognizer.cancelsTouchesInView = false
+            gesturerecognizer.delegate = self
+            view.addGestureRecognizer(gesturerecognizer)
+            
+            // Gradient view
+            view.backgroundColor = UIColor.clear
+            let dimmingView = GradientView(frame: CGRect.zero)
+            dimmingView.frame = view.bounds
+            view.insertSubview(dimmingView, at: 0)
+        } else {
+            view.backgroundColor = UIColor(patternImage: UIImage(
+                named: "LandscapeBackground")!)
+            popupView.isHidden = true
+        }
         
         if searchResult != nil {
             updateUI()
         }
         
-        // Gradient view
-        view.backgroundColor = UIColor.clear
-        let dimmingView = GradientView(frame: CGRect.zero)
-        dimmingView.frame = view.bounds
-        view.insertSubview(dimmingView, at: 0)
     }
     
     deinit {
