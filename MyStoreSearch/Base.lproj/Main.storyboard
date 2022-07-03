@@ -388,6 +388,7 @@
                             <outlet property="delegate" destination="baK-7O-HWl" id="9B6-BL-d1k"/>
                         </connections>
                     </tableView>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="204"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zki-Nz-Bc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
