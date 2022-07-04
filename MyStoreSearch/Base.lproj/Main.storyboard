@@ -318,10 +318,10 @@
             </objects>
             <point key="canvasLocation" x="783" y="93"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="tHT-xE-vuX">
             <objects>
-                <tableViewController storyboardIdentifier="PopoverView" id="baK-7O-HWl" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PopoverView" id="baK-7O-HWl" customClass="MenuViewController" customModule="MyStoreSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="YME-OP-YgG">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
