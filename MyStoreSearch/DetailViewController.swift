@@ -128,11 +128,12 @@ class DetailViewController: UIViewController {
     
     @objc func showPopover(_ sender: UIBarButtonItem) {
         guard let popover = storyboard?.instantiateViewController(
-            withIdentifier: "PopoverView") else { return }
+            withIdentifier: "PopoverView") as? MenuViewController else { return }
         popover.modalPresentationStyle = .popover
         if let ppc = popover.popoverPresentationController {
             ppc.barButtonItem = sender
         }
+        popover.delegate = self
         present(popover, animated: true, completion: nil)
     }
 
@@ -168,4 +169,9 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
                 return FadeOutAnimationController()
         }
     }
+}
+
+// MARK: - Menu View Controller Delegate
+extension DetailViewController: MenuViewControllerDelegate {
+    func menuViewControllerSendEmail(_ controller: MenuViewController) {}
 }
